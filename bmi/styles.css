@@ -1,0 +1,40 @@
+body {
+  background-color: lightblue;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.weight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.height {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+input {
+  margin: 0 5px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  border: 2px orange;
+  margin: 10px auto;
+  width: 100px;
+}

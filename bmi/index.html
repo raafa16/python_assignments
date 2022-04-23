@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+<head>
+  <meta charset = "utf-8">
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<h1>BMI Calculator</h1>
+<form action = "/result" method = "post">
+  <div class="weight">
+    <label>Weight (in pounds)</label>
+    <input type="text" name = "weight" />
+  </div>
+
+  <div class="height">
+    <label>Height (ft)</label>
+    <input type="text" name = "height_in_feet" />
+
+    <label>(inches)</label>
+    <input type="text" name = "height_in_inches" />
+  </div>
+
+  <button type = "submit">
+    Submit
+  </button>
+</form>
+</body>
+</html>
