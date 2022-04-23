@@ -2,6 +2,7 @@
     basic card game framework
     keeps track of card locations for as many hands as needed
 """
+# from random import * throws error for some reason
 import random
 
 NUMCARDS = 52
