@@ -64,11 +64,14 @@ def decode(coded):
 
     for char in coded:
         if char in key:
-            # find the index of the letter in alpha
+            # find the index of the char in key
             idx = key.index(char)
 
-            # append key to the encoded string
+            # append letter to the decoded string
             decodedString += alpha[idx]
+        # if char is a 5, replace with a space
+        elif char == '5':
+            decodedString += ' '
 
     return decodedString
 
