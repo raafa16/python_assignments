@@ -37,6 +37,34 @@ def menu():
     return response
 
 
+def encode(plain):
+    encodedString = ""
+
+    for char in plain:
+        if char in alpha:
+            # find the index of the letter in alpha
+            idx = alpha.index(char)
+
+            # append key to the encoded string
+            encodedString += key[idx]
+
+    return encodedString
+
+
+def decode(coded):
+    decodedString = ""
+
+    for char in coded:
+        if char in key:
+            # find the index of the letter in alpha
+            idx = key.index(char)
+
+            # append key to the encoded string
+            decodedString += alpha[idx]
+
+    return decodedString
+
+
 if __name__ == "__main__":
 
     main()
