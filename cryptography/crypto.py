@@ -1,5 +1,6 @@
 alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 key = "XPMGTDHLYONZBWEARKJUFSCIQV"
+space = "5"
 
 
 def main():
@@ -41,12 +42,19 @@ def encode(plain):
     encodedString = ""
 
     for char in plain:
+        # convert from lowercase to uppercase
+        char = char.upper()
+        # if the char is a letter present in alpha
         if char in alpha:
+            char = char
             # find the index of the letter in alpha
             idx = alpha.index(char)
 
             # append key to the encoded string
             encodedString += key[idx]
+        # if the char is a space, replace with 5
+        elif char == ' ':
+            encodedString += space
 
     return encodedString
 
